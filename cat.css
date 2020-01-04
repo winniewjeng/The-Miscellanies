@@ -1,0 +1,46 @@
+#cat{
+    font-size: 70px;
+    color: darkgreen;
+    font-family: 'Just Another Hand', cursive;
+}
+
+form {
+    padding: 10px 50px 0px 50px;
+    font-size: 25px;
+    text-align: left;
+    color: darkgreen;
+    font-family: 'Just Another Hand', cursive;
+}
+
+#userCatPicture {
+    font-size: 25px;
+    border-radius: 2px;
+}
+
+#memeText_upper {
+    padding: 50px 50px 0px 0px;
+    background-color: transparent;
+    font-size: 40px;
+    font-family: "Impact";
+    color: white;
+    text-shadow: black 0px 0px 10px;
+    width: 600px;
+    position: absolute;
+    text-align: center;
+}
+
+#memeText_lower {
+    padding:400px 50px 0px 0px;
+    background-color: transparent;
+    font-size: 40px;
+    font-family: "Impact";
+    color: white;
+    text-shadow: black 0px 0px 10px;
+    width: 600px;
+    position: absolute;
+    text-align: center;
+}
+
+#memePicture {
+    padding: 10px 50px 0px 5px;
+}
