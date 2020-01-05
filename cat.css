@@ -29,7 +29,7 @@ input[type=text] {
 }
 
 input[type=text] {
-    width: 130px;
+    width: 100px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -39,7 +39,21 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 100%;
+    width: 20%;
+}
+
+input[type=file] {
+    width: 160px;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Just Another Hand', cursive;
+}
+
+@media screen and (max-width: 600px) {
+    input[type=file], input[type=text], input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
 }
 
 #userCatText_lower {
@@ -52,7 +66,6 @@ input[type=text]:focus {
 }
 
 #memeText_upper {
-    /* padding: 50px 50px 0px 0px; */
     background-color: transparent;
     font-size: 40px;
     font-family: "Impact";
@@ -61,10 +74,11 @@ input[type=text]:focus {
     width: 600px;
     position: absolute;
     text-align: center;
+    left: 450px; /*these values are not absolute*/
+    top: 1280px; /*these values are not absolute*/
 }
 
 #memeText_lower {
-    /* padding:400px 50px 0px 0px; */
     background-color: transparent;
     font-size: 40px;
     font-family: "Impact";
@@ -73,9 +87,21 @@ input[type=text]:focus {
     width: 600px;
     position: absolute;
     text-align: center;
+    left: 450px; /*these values are not absolute*/
+    top: 1700px; /*these values are not absolute*/
 }
 
-#memePicture {
-    padding: 10px 50px 0px 5px;
-    max-width: 100%;
+@media screen and (max-width:600px) {
+    #memeText_lower, #memeText_upper {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #memePicture {
+        width: 90%;
+        height: auto;
+        margin-top: 0;
+    }
 }
