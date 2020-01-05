@@ -12,22 +12,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link
-        href="https://fonts.googleapis.com/css?family=Calligraffitti|Just+Another+Hand|Montez|Nanum+Brush+Script&display=swap"
+        href="https://fonts.googleapis.com/css?family=Calligraffitti|Just+Another+Hand|Montez|Nanum+Brush+Script|Acme|Amatic+SC|Baskervville|Lobster+Two|Dosis|Comfortaa&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="cat.css">
     <link rel="stylesheet" href="poo.css">
+    <link rel="stylesheet" href="ghibli.css">
     <title>Feynmann & Hubble</title>
     <style type="text/css"></style>
 </head>
 
 <body>
     <div class="sidebar">
-        <a href="#home"><img src="/icons/home_icon.png" alt="home-icon"></a>
-        <a href="#color"><img src="/icons/color_icon.png" alt="color-icon"></a>
+        <a href="#home"><img src="/icons/misc_icon.png" alt="home-icon"></a>
+        <a href="#color"><img src="/icons/splash_icon.png" alt="color-icon"></a>
         <a href="#cat"><img src="/icons/cat_icon.png" alt="cat-icon"></a>
         <a href="#poo"><img src="/icons/poo_icon.png" alt="poo-icon"></a>
+        <a href="#root"><img src="/icons/totoro_icon.png" alt="soot-icon"></a>
     </div>
 
     <div class="container">
@@ -37,26 +39,26 @@
     <div class="container">
         <h2 id="color">Guess the Color</h2>
         <h3 id='colorValue'></h3>
-        <div id='buttonWrapper'>
+        <h4 id='buttonWrapper'>
             <button class="colorButton"></button>
             <button class="colorButton"></button>
             <button class="colorButton"></button>
             <button class="colorButton"></button>
             <button class="colorButton"></button>
             <button class="colorButton"></button>
-        </div>
-        <h3 id='colorAnswer'></h3>
+        </h4>
+
+        <h3 id='answer'></h3>
         <div id="reset"><button id="resetButton">Reset</button></div>
     </div>
 
     <div class="container">
         <h2 id="cat">Cat Meme Generator</h2>
-        <form> Upper Text:
+        <form> 
+            Upper Text:
             <input type="text" id="userCatText_upper" maxlength="70" oninput="update_cat_text()">
-            <p></p>
             Lower Text:
             <input type="text" id="userCatText_lower" maxlength="70" oninput="update_cat_text()">
-            <p></p>
             <input type="file" id="userCatPicture" onchange="update_cat_image()">
         </form>
         <div id="memeText_upper"></div>
@@ -71,11 +73,17 @@
         <div id="map"></div>
     </div>
 
+    <div class="container">
+        <h2 id="root">Studio Ghibli Films Expository</h2>
+
+    </div>
+
     <script src="/color.js"></script>
     <script src="cat.js"></script>
     <script src="/poo.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZF0PLjvNHjT6Rb5uxjoFx1Ix00Es1zE0&callback=initMap"></script>
+    <script src="/ghibli.js"></script>
+    <!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZF0PLjvNHjT6Rb5uxjoFx1Ix00Es1zE0&callback=initMap"></script> -->
 
 </body>
 

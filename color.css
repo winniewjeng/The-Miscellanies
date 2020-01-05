@@ -1,33 +1,53 @@
+#color {
+    width: 100%;
+    text-align: center;
+    /* padding: 30px; */
+    font-size: 70px;
+    display: block;
+    font-family: 'Acme';
+}
+
+#colorValue{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    /* padding: 10px; */
+    font-family: 'Acme';
+    font-size: 30px;
+    display: block;
+    color: rgb(52, 51, 51);
+}
+
 .colorButton {
     background-color: rgb(255,0,0);
     width: 70px;
     height: 70px;
+    max-width: 100%;
     border: none;
     border-radius: 50%;
     box-shadow: none;
-    margin: 10px;    
+    margin: 40px;
+    display: block;
 }
 
-#buttonWrapper{
-    padding: 20px;
-    width: 100%;
+#buttonWrapper {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto
-}
-
-#colourValue{
-    margin: 0 auto;
-    text-align: center;
-    font-size: 70px;
-    color: black;
-    opacity: 50%;
+    /* padding: 5px 60px, 5px, 60px; */
+    /* justify-content: space-around; */
+    justify-content: center;
 }
 
 #answer{
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    max-width: 100%;
+    align-content: center;
     text-align: center;
+    font-family: 'Acme';
+    font-size: 30px;
+    display: block;
 
 }
 
@@ -39,7 +59,8 @@
 }
 
 #reset-button{
-    padding: 10px;
+    max-width: 100%;
+    /* padding: 10px; */
     background: none;
     border: 1px solid #000;
     margin: 10px;

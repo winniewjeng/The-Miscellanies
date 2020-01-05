@@ -14,7 +14,7 @@ function update_cat_text(){
 
 function update_cat_image() {
     const images = document.querySelectorAll('img');
-    const img = images[4]; // 4 is a hard-coded variable
+    const img = images[5]; // 5 is a hard-coded variable
     const file = document.querySelector('input[type=file]').files[0];
     console.log("img is " + img);
     console.log("cat image updated " + file);

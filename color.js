@@ -18,7 +18,7 @@ function makeRandomColorValue() {
     return Math.round(Math.random() * 255);
 }
 
-var answerMessage = document.getElementById('colorAnswer');
+var answerMessage = document.getElementById('answer');
 
 function startGame() {
     // refresh game page message
@@ -40,8 +40,8 @@ function startGame() {
         }
 
         buttons[i].addEventListener('click', function () {
-            console.log(`button ` + i + ` is clicked`);
-            console.log(`this is ` + this);
+            // console.log(`button ` + i + ` is clicked`);
+            // console.log(`this is ` + this);
             if (this === buttons[colorAnswerButton]) {
                 answerMessage.innerHTML = "Correct!";
             } else {

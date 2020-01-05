@@ -7,9 +7,43 @@
 form {
     padding: 10px 50px 0px 50px;
     font-size: 25px;
-    text-align: left;
+    /* text-align: left; */
+    align-items: center;
+    margin: 20px;
+    max-width: 100%;
+    display: block;
     color: darkgreen;
     font-family: 'Just Another Hand', cursive;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+#userCatText_upper {
+    text-align: center;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#userCatText_lower {
+    text-align: center;
 }
 
 #userCatPicture {
@@ -18,7 +52,7 @@ form {
 }
 
 #memeText_upper {
-    padding: 50px 50px 0px 0px;
+    /* padding: 50px 50px 0px 0px; */
     background-color: transparent;
     font-size: 40px;
     font-family: "Impact";
@@ -30,7 +64,7 @@ form {
 }
 
 #memeText_lower {
-    padding:400px 50px 0px 0px;
+    /* padding:400px 50px 0px 0px; */
     background-color: transparent;
     font-size: 40px;
     font-family: "Impact";
@@ -43,4 +77,5 @@ form {
 
 #memePicture {
     padding: 10px 50px 0px 5px;
+    max-width: 100%;
 }
